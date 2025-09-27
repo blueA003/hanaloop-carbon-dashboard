@@ -155,8 +155,8 @@ project-root/
 ## 실행 화면
 
 ## 1. 사이드바 동작
-![Sidebar Demo](./public/sidebar1.gif)
-![Sidebar Demo 2](./public/sidebar2.gif)
+![Sidebar Demo](./public/sidebar.gif)
+
 
 ### 2. 차트 시각화
 ![Chart Demo](./public/chart.gif)
@@ -164,8 +164,5 @@ project-root/
 ## 3. 게시물(Post) 기능
 ![Post Demo](./public/post.gif)
 
-## 4. 로딩 화면
-![Loading Demo](./public/loading.gif)
-
-## 5. 에러 화면
+## 4. 에러 화면
 ![Error Demo](./public/err.gif)
