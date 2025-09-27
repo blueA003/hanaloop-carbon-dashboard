@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 탄소 배출량 대시보드 (Carbon Emissions Dashboard)
 
-## Getting Started
+이 프로젝트는 (주)하나루프의 서류 전형 소규모 프로젝트로 제작된 웹 기반 탄소 배출량을 시각화한 대시보드입니다.
+기업별/국가별 배출 현황, 예상 탄소세, 연말 배출량을 추정할 수 있도록 설계되었습니다.
 
-First, run the development server:
+## 기술 스택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Framework: Next.js 14 (App Router) + React 18 + TypeScript
+- Css: TailWind CSS
+- 차트: Recharts
+- 상태 관리: React hooks (`useState`, `useEffect`)
+- Icon: React Icons
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 주요 기능
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 대시보드 레이아웃
+  - 사이드바: 회사 목록 및 선택
+  - 헤더: 네비게이션
+  - 메인 영역: 여러가지 차트와 카드 배치
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 배출량 시각화
+  - 총 배충량 카드 (목표 대비 %)
+  - 예상 탄소세 계산 (가상의 수치 * 배출량 )
+  - 연말 예상 배출량 (선택된 회사의 Total Emissions / emissions.length * 12)
+  - 월별 추세 라인 차트와 파이 차트
+  - 국가별 바 차트
 
-## Learn More
+- 게시물(Post) 관리
+  - 월별/회사별 가상의 데이터 보고서 목록 표시
+  - Post 추가 / 수정 / 삭제 기능
+  - Fake backend 연동 
+  - 롤백 처리
 
-To learn more about Next.js, take a look at the following resources:
+- 에러/로딩 처리
+  - 전역 로딩 스피너
+  - 실패 시 에러 UI (빨간 박스 알림)
+  - 데이터 없음 상태 처리 (“데이터 없음” 표시)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
