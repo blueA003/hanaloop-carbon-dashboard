@@ -78,17 +78,17 @@ project-root/
 ## 실행 방법
 
 1.저장소 클론
-  git clone https://github.com/blueA003/hanaloop-carbon-dashboard.git
-  cd carbon-emissions-dashboard
+  - git clone https://github.com/blueA003/hanaloop-carbon-dashboard.git
+  - cd carbon-emissions-dashboard
 
 2. 설치
-  npm install
+  - npm install
 
 3. 실행
-  npm run dev
+  - npm run dev
 
 4. 접속
-  http://localhost:3000
+  - http://localhost:3000
 
 
 ## 가정 및 구현 메모
@@ -162,7 +162,7 @@ project-root/
 ![Chart Demo](/chart.gif)
 
 ## 3. 게시물(Post) 기능
-![Post Demo](/post기능.gif)
+![Post Demo](/post.gif)
 
 ## 4. 로딩 화면
 ![Loading Demo](/loading.gif)
